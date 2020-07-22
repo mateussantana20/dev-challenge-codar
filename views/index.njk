@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Code.</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a class="logo" href="">Codar<b>.</b></a>
+
+      <div class="menu-section">
+        <div class="menu-toggle">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+
+      <nav>
+        <ul>
+          <li><a href="">Início</a></li>
+          <li><a href="">Serviços</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a class="button" href="">Login</a></li>
+             
+        </ul>
+      </nav>
+    </div><!--container-->
+  </header>
+
+  <section class="bg">
+    <div class="container">
+
+      <div class="bgLeft">
+          <img src="assets/video_call.png" alt="">
+      </div><!--bgLeft-->
+
+      <div class="bgRight">
+        <span>Alavanque seu negócio com um</span>
+        <h2>Website incrível</h2>
+        <button>Solicitar orçamento</button>
+      </div><!--bgRight-->
+
+    </div><!--container-->
+  </section>
+
+
+  <section class="listServices">
+    <div class="container">
+
+      <div class="listLeft">
+
+        {% for item in items %}
+          <div class="checkList">
+            <div class="icon"><img src="assets/check.svg" alt=""></div>
+            <p>{{item.title}}</p>
+          </div><!--checkList-->
+        {% endfor %}
+
+      </div><!--listLeft-->
+
+      <div class="listRight">
+        <img src="assets/coding_.png" alt="">
+      </div><!--listRight-->
+    </div><!--container-->
+  </section>
+
+
+  <section class="nossEquipe">
+    <div class="container">
+      <div class="nossaEquipeBox">
+        <h2>Nossa equipe está à disposição!</h2>
+        <form>
+          <input type="text" placeholder="Celular">
+          <input type="submit" value="Ligamos para você"></button>
+        </form>
+      </div><!--nossaEquipeBox-->
+    </div><!--container-->
+  </section><!--nossEquipe-->
+
+
+
+  <section class="depoimentos">
+    <div class="container">
+
+      {% for depoimento in depoimentos%}
+        <div class="depoimentosContainer">
+          <div class="avatar">
+            <img class="avatar" src="{{depoimento.avatar_url}}" alt="">
+          </div>
+          <div class="depoimentosText">
+            <p>{{depoimento.descrition}}</p>
+            <h3>{{depoimento.name}}</h3>
+            <span>{{depoimento.role}}</span>
+          </div>
+        </div><!--depoimentosContainer-->
+      {% endfor %}
+
+
+    </div><!--container-->
+  </section>
+
+
+  <footer>
+    <div class="container">
+
+      <div class="footer1">
+        <h1>Codar.</h1>
+        <p>Criamos websites incríveis</p>
+      </div><!--footer1-->
+
+      <div class="footer2">
+        <h2>Sobre</h2>
+        <p>Amamos criar soluções e entragar sites incríveis</p>
+      </div><!--footer1-->
+
+      <div class="footer3">
+        <h2>Contato</h2>
+        <p>123 Av. Manjar-Nárnia</p>
+        <p>+55 00 0000-0000</p>
+        <p>contato@codar.com</p>
+      </div><!--footer1-->
+
+      <div class="footer4">
+        <h2>Redes sociais</h2>
+        <img src="assets/facebook.svg" alt="">
+        <img src="assets/instagram.svg" alt="">
+        <img src="assets/twitter.svg" alt="">
+        <!-- <p>Criamos websites incríveis</p> -->
+      </div><!--footer1-->
+
+    </div><!--container-->
+  </footer>
+
+<script src="js/scritp.js" ></script>
+</body>
+</html>
