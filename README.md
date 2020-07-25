@@ -72,7 +72,7 @@ Para os ícones, é recomendada a utilização de uma biblioteca, como o Font Aw
 Inicie seu projeto utilizando esse template no seu github como um repositório público<br>
 Faça um print, gif ou vídeo e compartilhe o resultado no seu Linkedin<br>
 
-# usar;
+# Instalação!
 - npm install ou yarn 
 - depois yarn start ou npm start
 
