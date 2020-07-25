@@ -29,6 +29,8 @@
   * [Tipo de fonte](#tipo-de-fonte)
 * [Compartilhe](#compartilhe)
 
+* [Modo de usa](#usar)
+
 # Devchallenge
 <a href="https://devchallenge.now.sh/"> DevChallenge</a> permite que você evolua suas skills como programador!
 
@@ -69,5 +71,9 @@ Para os ícones, é recomendada a utilização de uma biblioteca, como o Font Aw
 # Compartilhe!
 Inicie seu projeto utilizando esse template no seu github como um repositório público<br>
 Faça um print, gif ou vídeo e compartilhe o resultado no seu Linkedin<br>
+
+#usar;
+- npm install ou yarn 
+- depois yarn start ou npm start
 
 Criado por  <a href="https://github.com/Lorenalgm">Lorena</a> :)
